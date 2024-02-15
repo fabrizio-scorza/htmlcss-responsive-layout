@@ -12,16 +12,20 @@
     </head>
     <body>
         <header class="page__header">
+            <!-- header con logo hamburger e lista link  -->
             <div class="container">
                 <nav class="row">
                     <div class="logo">
+                        <!-- logo -->
                         <a href="">
                             <img src="./img/logo.png" alt="logo">
                         </a>
                     </div>
                     <div class="menu flex">
+                        <!-- hamburger visibile solo tablet e smartphone -->
                         <a class="hamburger" href=""><i class="fa-solid fa-bars"></i></a>
                         <ul class="link">
+                            <!-- lista di link visibile solo desktop -->
                             <li>
                                 <a href="">Planning</a>
                             </li>
@@ -44,6 +48,68 @@
         </header>
 
         <main class="page__body">
+            <section>
+                <!-- sezione con le card  -->
+                <div class="container">
+                    <div class="row-md">
+                        <div class="col col-8m">
+                            <!-- colonna più larga -->
+                            <div class="card">
+                                <!-- card con body e thumbnail -->
+                                <div class="card__body">
+                                    <h3>Get a demo application</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis, cumque exercitationem recusandae repudiandae magni deserunt aspernatur dicta atque?</p>
+                                    <a class="btn" href=""><i class="fa-brands fa-apple"></i>App Store</a>
+                                </div>
+                                <div class="card__thumb">
+                                    <img src="./img/phone.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-4m">
+                            <!-- card con logo testo e paragrafo Clean Code -->
+                            <div class="card">
+                                <div class="card__body">
+                                    <span><i class="fa-solid fa-file-code"></i></span>
+                                    <h3>Clean Code</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis, cumque exercitationem recusandae repudiandae magni deserunt aspernatur dicta atque?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-4m">
+                            <!-- card con logo testo e paragrafo Web Design -->
+                            <div class="card">
+                                <div class="card__body">
+                                    <span><i class="fa-solid fa-compass-drafting"></i></span>
+                                    <h3> Web Design</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis, cumque exercitationem recusandae repudiandae magni deserunt aspernatur dicta atque?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-4m">
+                            <!-- card con logo testo e paragrafo Development-->
+                            <div class="card">
+                                <div class="card__body">
+                                    <span><i class="fa-solid fa-laptop-code"></i></span>
+                                    <h3>Development</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis, cumque exercitationem recusandae repudiandae magni deserunt aspernatur dicta atque?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-4m">
+                            <!-- card con logo testo e paragrafo Branding-->
+                            <div class="card">
+                                <div class="card__body">
+                                    <span><i class="fa-solid fa-bullhorn"></i></span>
+                                    <h3>Branding</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis, cumque exercitationem recusandae repudiandae magni deserunt aspernatur dicta atque?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="page__footer">
