@@ -1,25 +1,105 @@
-/* RESET */
+/* RESET ************/
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-
-ul,
-ol,
-menu {
+ul, ol{
 	list-style: none;
 }
-
 a {
 	text-decoration: none;
 	color: currentColor;
 }
-
 img {
 	max-width: 100%;
 }
-
 body {
     font-family: "Fredoka", sans-serif;
+}
+
+
+/* LAYOUT ************/
+.container{
+    max-width: 1200px;
+}
+.container-sm{
+    max-width:940px ;
+}
+.container, .container-sm{
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px 28px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* .col-4{
+    width: calc(4*100%/12);
+}
+.col6{
+    width: calc(6*100%/12);
+}
+.col-8{
+    width: calc(8*100%/12);
+} */
+
+/* UTILITIES ************/
+.flex{
+    display: flex;
+}
+.btn{
+    background-color:#FFFFFF ;
+    border-radius: 999px;
+    color:black
+}
+
+
+/* HEADER STYLE ************/
+.page__header{
+    background-color: #0084FD;
+}
+.page__header .row{
+    justify-content: space-between;
+    align-items: center;
+}
+.page__header .logo {
+    width: 94px;
+}
+.page__header .menu{
+    color: white;
+    font-size: 30px;
+}
+.page__header .link{
+    display: none;
+}
+
+
+/************ MEDIA QUERY ************/
+
+
+/************ m:tablet****************/
+@media screen and (min-width: 768px) {
+
+}
+
+
+/************ xl: desktop ************/
+@media screen and (min-width: 1200px) {
+/*********** HEADER ******************/
+
+    .page__header .hamburger {
+        display: none;
+    }
+    .page__header .link{
+        display:flex ;
+        font-size: 16px;
+    }
+    .link a{
+        padding-right:32px ;
+    }
+    .link .btn{
+        padding: 8px 16px;
+    }
 }
