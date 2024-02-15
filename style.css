@@ -1,4 +1,4 @@
-/* RESET ************/
+/* RESET******************************************/
 * {
 	margin: 0;
 	padding: 0;
@@ -19,7 +19,7 @@ body {
 }
 
 
-/* LAYOUT ************/
+/* LAYOUT***************************************/
 .container{
     max-width: 1200px;
 }
@@ -35,17 +35,9 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-.col-4m{
-    width: calc(4*100%/12);
-}
-.col6{
-    width: calc(6*100%/12);
-}
-.col-8m{
-    width: calc(8*100%/12);
-}
 
-/* UTILITIES ************/
+
+/* UTILITIES**********************************/
 .flex{
     display: flex;
 }
@@ -56,9 +48,10 @@ body {
 }
 
 
-/* HEADER STYLE ************/
+/* HEADER***********************************/
 .page__header{
     background-color: #0084FD;
+    margin-bottom: 24px;
 }
 .page__header .row{
     justify-content: space-between;
@@ -74,10 +67,11 @@ body {
 .page__header .link{
     display: none;
 }
-/* CARD ICON SECTION **********************/
+
+
+/* CARD ICON SECTION ***********************/
 .page__body .col{
-    width:100%;
-    padding: 24px 2px;
+    padding: 12px 2px;
 }
 .card{
     background-color:#B5DDFF ;
@@ -85,13 +79,23 @@ body {
 }
 .card__body{
     padding: 36px;
-    line-height: 24px;   
+}
+.card__title{
+    color:#0084FD;
+    font-size: 18px;
+}
+.card__text{
+    color: #5A6E7F;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
 }
 .card__body .btn{
     display:inline-block;
     background-color: #0084FD;
     color: white;
-    padding:8px 54px;
+    padding:8px 44px;
+    text-align: center;
 }
 .btn i{
     padding-right:8px;
@@ -101,28 +105,64 @@ body {
 }
 .card__thumb img{
     display: block;
-    width: 75%;
+    width:200px;
     margin:0 auto;
+}
+.card__body:not(.card__body.no-center){
+    text-align: center;
+}
+.card__body .icon{
+    display: block;
+    font-size: 72px;
+    color:#0084FD;
 }
 
 
-/************ MEDIA QUERY ************/
+/************ MEDIA QUERY ******************/
 
 
-/************ m:tablet****************/
+/************ m: tablet ********************/
 @media screen and (min-width: 768px) {
+
+
+/***LAYOUT**********************************/
     .row-md {
         display: flex;
         flex-wrap: wrap;
     }
+    .col-4md{
+        width: calc(4*100%/12);
+    }
+    .col-8md{
+        width: calc(8*100%/12);
+    }
+
+
+/***CARD ICON SECTION***********************/
+    .page__body .no-gutter{
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    .page__body .col{
+        padding: 12px;
+    }
+    .card{
+        height: 100%;
+    }
+    .card__title{
+        font-size: 22px;
+    }
+    .card__text{
+        font-size: 16px;
+    }
 }
 
 
-/************ xl: desktop ************/
+/************ xl: desktop ******************/
 @media screen and (min-width: 1200px) {
 
 
-/*********** HEADER ******************/
+/****HEADER ********************************/
     .page__header .hamburger {
         display: none;
     }
@@ -136,4 +176,15 @@ body {
     .link .btn{
         padding: 8px 16px;
     }
+/****CARD ICON SECTION *********************/
+    .col-6xl{
+        width: calc(6*100%/12);
+    }
+    .flex-xl{
+        display: flex;
+    }
+    .card__thumb{
+        align-self: flex-end;
+    }
+   
 }
