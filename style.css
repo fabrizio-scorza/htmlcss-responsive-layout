@@ -1,0 +1,25 @@
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul,
+ol,
+menu {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+    font-family: "Fredoka", sans-serif;
+}
