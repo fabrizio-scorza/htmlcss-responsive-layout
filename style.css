@@ -193,6 +193,7 @@ body {
     background-color: #9792E4;
     margin-bottom: 24px;
     color: white;
+    border-radius: 38px;
 }
 .testimonials .card__head img{
     width: 200px;
@@ -219,6 +220,36 @@ body {
 }
 .signature{
     font-size: 22px;
+}
+/*BENEFITS SECTION ***********************/
+.benefits{
+    background-color: #9691E4;
+}
+.benefits__title{
+    color: white;
+    text-align: center;
+    font-size:36px ;
+}
+.benefits .card{
+    background-color: white;
+    color: #9691E4;
+    padding: 50px 30px 30px;
+    margin-bottom: 30px;
+}
+.benefits .card :not(.card :last-child){
+    padding-bottom: 20px;
+}
+.benefits .card h2{
+    font-size: 62px;
+    font-weight: 500;
+}
+.benefits .card h3{
+    font-size: 22px;
+}
+.benefits .btn{
+    background-color: #9691E4;
+    padding: 10px 50px;
+    color: white;
 }
 /************ MEDIA QUERY ******************/
 
