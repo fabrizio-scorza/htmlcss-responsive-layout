@@ -49,12 +49,13 @@ body {
 .ptb{
     padding: 50px 0;
 }
-
 .text{
     font-size: 14px;
     line-height: 1.85em;
 }
-
+.pb20{
+    padding-bottom: 20px;
+}
 
 /* HEADER***********************************/
 .page__header{
@@ -172,7 +173,7 @@ body {
 .testimonials .container{
     text-align: center;
 }
-.testimonials .container :not(.testimonials .container :last-child){
+.testimonials .card__head, .testimonials__quotes{
     padding-bottom: 20px;
 }
 .testimonials__title{
@@ -239,6 +240,12 @@ body {
     }
 
 
+/***UTILITIES*************************************/
+    .flex-md{
+        display: flex;
+    }
+
+
 /***CARD ICON SECTION****************************/
     .page__body .no-gutter{
         margin-left: -12px;
@@ -262,6 +269,23 @@ body {
     }
     .strategic__text{
         font-size:18px;
+    }
+/***TESTIMONIALS SECTION ************************/
+    .testimonials .card{
+        text-align:left;
+        align-items: center;
+    }
+    .testimonials .card__head{
+    padding: 0; 
+    }
+    .testimonials .card__body{
+        padding: 0 40px;
+    }
+    .testimonials__quotes{
+        font-size: 14px;
+    }
+    .signature{
+        font-size: 18px;
     }
 }
 
