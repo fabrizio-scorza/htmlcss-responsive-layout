@@ -130,7 +130,7 @@ body {
     background-color:#9792E4 ;
     color: white;
 }
-.strategic-planning p{
+.strategic-planning .strategic__text{
     margin-bottom: 20px;
 }
 .strategic__img{
@@ -187,7 +187,7 @@ body {
     }
 
 
-/***CARD ICON SECTION***********************/
+/***CARD ICON SECTION****************************/
     .page__body .no-gutter{
         margin-left: -12px;
         margin-right: -12px;
@@ -201,12 +201,28 @@ body {
     .card__thumb img{
         margin: 0;
     }
+/***STRATEGIC PLANNING SECTION *****************/
+    .strategic-planning{
+        padding: 80px 0;
+    }
+    .strategic__title{
+        font-size: 72px;
+    }
+    .strategic__text{
+        font-size:18px;
+    }
 }
 
-
-/************ l: desktop ******************/
+/************ l: desktop ***********************/
 @media screen and (min-width: 992px) {
-
+/****LAYOUTS ********************************/
+    .row-l{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-6l{
+        width: calc(6*100%/12);
+    }
 
 /****UTILITIES ********************************/
     .flex-l{
@@ -231,14 +247,25 @@ body {
 
 
 /****CARD ICON SECTION *********************/
-    .col-6l{
-        width: calc(6*100%/12);
-    }
     .card__thumb{
         align-self: flex-end;
     }
     .card__thumb img{
         margin: 0 auto;
     }
-   
+
+
+/***STRATEGIC PLANNING SECTION *****************/
+    .row-l > *{
+        padding: 0 30px;
+    }
+    .strategic__title{
+    font-size: 32px;
+    }
+    .strategic-planning .strategic__text{
+        margin-bottom: 50px;
+    }
+    .bottom {
+        align-self: flex-end;
+    }
 }
