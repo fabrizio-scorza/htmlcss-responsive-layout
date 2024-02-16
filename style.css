@@ -266,6 +266,9 @@ body {
     .col-4md{
         width: calc(4*100%/12);
     }
+    .col-6md{
+        width: calc(6*100%/12);
+    }
     .col-8md{
         width: calc(8*100%/12);
     }
@@ -318,6 +321,13 @@ body {
     .signature{
         font-size: 18px;
     }
+/***BENEFITS SECTION ***************************/
+    .benefits .row-md{
+        align-items: center;
+    }
+    .benefits .col-6md{
+        padding: 0 12px;
+    }
 }
 
 /************ l: desktop ***********************/
@@ -326,6 +336,9 @@ body {
     .row-l{
         display: flex;
         flex-wrap: wrap;
+    }
+    .col-4l{
+        width: calc(4*100%/12);
     }
     .col-6l{
         width: calc(6*100%/12);
