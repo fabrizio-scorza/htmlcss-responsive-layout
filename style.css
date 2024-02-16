@@ -88,7 +88,7 @@ body {
     background-color:#B5DDFF ;
     border-radius: 24px;
 }
-.card__body{
+.hero .card__body{
     padding:36px;
 }
 .card__title{
@@ -109,7 +109,7 @@ body {
 .card__body .btn i{
     padding-right:8px;
 }
-.card__body > *:not(.card__body :last-child){
+.hero .card__body > *:not(.card__body :last-child){
     padding-bottom:24px;
 }
 .card__thumb img{
@@ -117,7 +117,7 @@ body {
     width:250px;
     margin:0 auto;
 }
-.card__body:not(.card__body.no-center){
+.hero .card__body:not(.card__body.no-center){
     text-align: center;
 }
 .card__body .icon{
@@ -165,7 +165,59 @@ body {
     padding:16px 20px;
     border-radius:50%;
     display: inline-block;
+}
 
+
+/*TESTIMONIAL SECTION ***********************/
+.testimonials .container{
+    text-align: center;
+}
+.testimonials .container :not(.testimonials .container :last-child){
+    padding-bottom: 20px;
+}
+.testimonials__title{
+    color: #9691E4;
+    font-size:36px;
+    line-height: 1.4em;
+}
+.surtitle{
+    font-weight: 400;
+}
+.testimonial__text{
+    font-size: 18px;
+    line-height: 1.85em;
+}
+.testimonials .card{
+    padding: 20px 12px;
+    background-color: #9792E4;
+    margin-bottom: 24px;
+    color: white;
+}
+.testimonials .card__head img{
+    width: 200px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit:cover;
+}
+.testimonials__quotes{
+    font-style: italic;
+    line-height: 1.85em;
+}
+.testimonials__quotes::before, .testimonials__quotes::after{
+    font-family:"Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 18px;
+}
+.testimonials__quotes::before{
+    content: '\f10d';
+    padding-right: 8px;
+}
+.testimonials__quotes::after{
+    content: '\f10e';
+    padding-left: 8px;
+}
+.signature{
+    font-size: 22px;
 }
 /************ MEDIA QUERY ******************/
 
