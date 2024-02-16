@@ -21,7 +21,7 @@ body {
 
 /* LAYOUT***************************************/
 .container{
-    max-width: 1200px;
+    max-width: 1160px;
 }
 .container-sm{
     max-width:940px ;
@@ -46,6 +46,14 @@ body {
     border-radius: 999px;
     color:black
 }
+.ptb{
+    padding: 50px 0;
+}
+
+.text{
+    font-size: 14px;
+    line-height: 1.85em;
+}
 
 
 /* HEADER***********************************/
@@ -58,7 +66,10 @@ body {
     align-items: center;
 }
 .page__header .logo {
-    width: 94px;
+    width: 94px; 
+}
+.page__header img{
+    display: block;
 }
 .page__header .menu{
     color: white;
@@ -78,17 +89,15 @@ body {
     border-radius: 24px;
 }
 .card__body{
-    padding: 36px;
+    padding:36px;
 }
 .card__title{
     color:#0084FD;
-    font-size: 18px;
+    font-size: 22px;
 }
 .card__text{
     color: #5A6E7F;
-    font-size: 14px;
     font-weight: 500;
-    line-height: 18px;
 }
 .card__body .btn{
     display:inline-block;
@@ -97,7 +106,7 @@ body {
     padding:8px 44px;
     text-align: center;
 }
-.btn i{
+.card__body .btn i{
     padding-right:8px;
 }
 .card__body > *:not(.card__body :last-child){
@@ -105,7 +114,7 @@ body {
 }
 .card__thumb img{
     display: block;
-    width:200px;
+    width:250px;
     margin:0 auto;
 }
 .card__body:not(.card__body.no-center){
@@ -119,12 +128,49 @@ body {
 /* STRATEGIC PLANNING SECTION ***********************/
 .strategic-planning{
     background-color:#9792E4 ;
+    color: white;
 }
+.strategic-planning p{
+    margin-bottom: 20px;
+}
+.strategic__img{
+    margin-bottom: 80px;
+}
+.strategic__title{
+    font-size: 32px;
+    margin-bottom:50px
+}
+.strategic-planning .card{
+    background-color: white;
+    color: black;
+    border-radius:38px;
+    text-align: center;
+    padding: 32px 26px;
+}
+.strategic-planning .card :not(.strategic-planning .card :last-child){
+    padding-bottom: 20px;
+}
+.strategic__card__title{
+    font-size: 26px;
+}
+.strategic__card__text{
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.85em;
+}
+.strategic-planning .btn{
+    background-color: #9792E4;
+    font-size: 20px;
+    text-align: center;
+    padding:16px 20px;
+    border-radius:50%;
+    display: inline-block;
 
+}
 /************ MEDIA QUERY ******************/
 
 
-/************ m: tablet ********************/
+/************ md: tablet ********************/
 @media screen and (min-width: 768px) {
 
 
@@ -152,17 +198,20 @@ body {
     .card{
         height: 100%;
     }
-    .card__title{
-        font-size: 22px;
-    }
-    .card__text{
-        font-size: 16px;
+    .card__thumb img{
+        margin: 0;
     }
 }
 
 
-/************ xl: desktop ******************/
-@media screen and (min-width: 1200px) {
+/************ l: desktop ******************/
+@media screen and (min-width: 992px) {
+
+
+/****UTILITIES ********************************/
+    .flex-l{
+        display: flex;
+    }
 
 
 /****HEADER ********************************/
@@ -170,7 +219,7 @@ body {
         display: none;
     }
     .page__header .link{
-        display:flex ;
+        display: flex;
         font-size: 16px;
     }
     .link a{
@@ -179,15 +228,17 @@ body {
     .link .btn{
         padding: 8px 16px;
     }
+
+
 /****CARD ICON SECTION *********************/
-    .col-6xl{
+    .col-6l{
         width: calc(6*100%/12);
-    }
-    .flex-xl{
-        display: flex;
     }
     .card__thumb{
         align-self: flex-end;
+    }
+    .card__thumb img{
+        margin: 0 auto;
     }
    
 }
